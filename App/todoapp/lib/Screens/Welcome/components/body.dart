@@ -7,6 +7,7 @@ import 'background.dart';
 class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    imageCache.clear();
     Size size = MediaQuery.of(context).size; //size of screen
     return Background(
       child: Column(
